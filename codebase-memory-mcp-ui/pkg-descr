@@ -1,0 +1,7 @@
+codebase-memory-mcp-ui is a high-performance code intelligence engine
+and Model Context Protocol (MCP) server with an embedded 3D web-graph
+visualization interface.
+
+It includes a beautiful React/Vite-based three.js node-cloud visualizer
+directly embedded into the native binary, allowing developers to explore
+their code dependency graphs interactively in the browser.

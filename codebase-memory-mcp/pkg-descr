@@ -1,0 +1,7 @@
+codebase-memory-mcp is a high-performance code intelligence engine
+and Model Context Protocol (MCP) server written in pure C.
+
+It parses and indexes codebases using tree-sitter grammars, constructing
+a highly optimized code knowledge graph with definitions, calls, imports,
+and semantic similarities, allowing AI coding agents to perform fast
+code intelligence queries.

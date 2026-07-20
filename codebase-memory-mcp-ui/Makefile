@@ -22,7 +22,7 @@ GH_TAGNAME=		freebsd-ports
 
 MAKEFILE=		Makefile.cbm
 ALL_TARGET=		cbm-with-ui
-MAKE_ARGS=      -f Makefile.cbm CC="${CC}" CXX="${CXX}" HARDENING=1 CFLAGS="${CFLAGS} -DCBM_VERSION=\\\"${DISTVERSION}\\\""
+MAKE_ARGS=      CC="${CC}" CXX="${CXX}" HARDENING=1 CFLAGS="${CFLAGS} -DCBM_VERSION=\\\"${DISTVERSION}\\\""
 
 PLIST_FILES=		bin/codebase-memory-mcp
 

@@ -22,6 +22,7 @@ These ports build natively from source utilizing the comprehensive, production-g
 
 ### 🛡️ Production Hardening Enabled by Default
 As recommended by Martin, security hardening has been refactored to be fully generic (`HARDENING`) and is **enabled by default (`HARDENING=1`)** in the base `Makefile.cbm` for ELF builds. All downstream environments automatically build with:
+* **Position-Independent Code & Executable (`-fPIE` / `-pie`)**: Generates dynamic position-independent machine code for defense-in-depth address space layout randomization (ASLR).
 * **Stack Smash Protection (`-fstack-protector-strong`)**: Detects stack buffer overflows before execution.
 * **Fortified Source (`-D_FORTIFY_SOURCE=2`)**: Performs compile-time and runtime validation on memory operations.
 * **Read-Only Relocations (`-z relro`)**: Places critical sections of executable headers in read-only tables.
@@ -38,8 +39,8 @@ Both ports fully implement the standard FreeBSD `do-test` regression target usin
 Copy these folders directly into `/usr/ports/devel/`:
 
 ```bash
-sudo cp -R devel/codebase-memory-mcp /usr/ports/devel/
-sudo cp -R devel/codebase-memory-mcp-ui /usr/ports/devel/
+sudo cp -R codebase-memory-mcp /usr/ports/devel/
+sudo cp -R codebase-memory-mcp-ui /usr/ports/devel/
 ```
 
 ### Step 2: Generate Checksums (`distinfo`)

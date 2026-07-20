@@ -1,0 +1,30 @@
+codebase-memory-mcp-ui-0.8.1.20260720
+Name           : codebase-memory-mcp-ui
+Version        : 0.8.1.20260720
+Origin         : devel/codebase-memory-mcp-ui
+Architecture   : FreeBSD:15:amd64
+Prefix         : /usr/local
+Categories     : devel
+Licenses       : MIT
+Maintainer     : pr9000@tutamail.com
+WWW            : https://github.com/PR9000/codebase-memory-mcp
+Comment        : Fast code intelligence engine with embedded graph visualization UI
+Shared Libs required:
+	libc++.so.1
+	libc.so.7
+	libcxxrt.so.1
+	libgcc_s.so.1
+	libm.so.5
+	libthr.so.3
+	libz.so.6
+Annotations    :
+	FreeBSD_version: 1501501
+Flat size      : 282MiB
+Description    :
+codebase-memory-mcp-ui is a high-performance code intelligence engine
+and Model Context Protocol (MCP) server with an embedded 3D web-graph
+visualization interface.
+
+It includes a beautiful React/Vite-based three.js node-cloud visualizer
+directly embedded into the native binary, allowing developers to explore
+their code dependency graphs interactively in the browser.
